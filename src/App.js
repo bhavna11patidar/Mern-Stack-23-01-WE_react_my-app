@@ -7,6 +7,9 @@ import {MultiExport1, MultiExport2} from './components/MultiExport';
 import {MultiExportFun1, MultiExportFun2} from './components/MultiExportFun';
 import Rcc1 from './components/Rcc1';
 import Rfc1 from './components/Rfc1';
+import Parent from './components/Parent';
+import ClassEvent from './components/main/ClassEvent'
+import StateData from './components/main/StateData';
 function App() {
   return (
     /*<div className="App">
@@ -33,8 +36,13 @@ function App() {
        <MultiExportFun1/>
        <MultiExportFun2/>
        */ }
-        <Rcc1 title="Rcc1 Component"></Rcc1>
+       {/* <Rcc1 title="Rcc1 Component"></Rcc1>
         <Rfc1 title="Rfc1 Component"></Rfc1>
+      */ }
+
+      { /*<Parent></Parent> */}
+      <ClassEvent></ClassEvent>
+      <StateData></StateData>
      </div>
   );
 }
