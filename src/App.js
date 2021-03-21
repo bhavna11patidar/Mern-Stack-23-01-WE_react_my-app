@@ -10,24 +10,20 @@ import Rfc1 from './components/Rfc1';
 import Parent from './components/Parent';
 import ClassEvent from './components/main/ClassEvent'
 import StateData from './components/main/StateData';
+import Header from './components/main/Header';
+import Home from './components/main/Home';
+import About from './components/main/About';
+import Contact from './components/main/Contact';
+import FormDataState from './components/main/FormDataState';
+import {BrowserRouter as Router, Route } from 'react-router-dom';
 function App() {
   return (
-    /*<div className="App">
-     <h1 class="text-primary">Hello World 1</h1>
+    <div className="App">
+     {/*<h1 class="text-primary">Hello World 1</h1>
      <Alert color="primary">
         This is a primary alert — check it out!
       </Alert>
-
-
-    </div>
-    */
-    /* <div>
-        <h1>dfdfd</h1>
-        <h2>fdfdhge</h2>
-      </div>
-      */
-     <div>
-       {/*<First></First>
+       <First></First>
        <Second></Second>
        <Abc></Abc>
        <Abc/>
@@ -35,14 +31,19 @@ function App() {
        <MultiExport2/>
        <MultiExportFun1/>
        <MultiExportFun2/>
-       */ }
-       {/* <Rcc1 title="Rcc1 Component"></Rcc1>
+     <Rcc1 title="Rcc1 Component"></Rcc1>
         <Rfc1 title="Rfc1 Component"></Rfc1>
-      */ }
-
-      { /*<Parent></Parent> */}
+     <Parent></Parent>
       <ClassEvent></ClassEvent>
-      <StateData></StateData>
+      <StateData></StateData> 
+  */}
+    <Router>
+       <Header></Header>
+       <Route exact path="/" component={Home}/>
+       <Route exact path="/about" component={About}/>
+       <Route exact path="/contact" component={Contact}/>
+       <Route exact path="/formdataState" component={FormDataState}/>
+    </Router>
      </div>
   );
 }
