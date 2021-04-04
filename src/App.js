@@ -16,6 +16,10 @@ import About from './components/main/About';
 import Contact from './components/main/Contact';
 import FormDataState from './components/main/FormDataState';
 import {BrowserRouter as Router, Route } from 'react-router-dom';
+import HooksExample from './components/main/HooksExample';
+import FormDataHooks from './components/main/FormDataHooks';
+import HocCounter1 from './components/main/HocCounter1';
+import HocCounter2 from './components/main/HocCounter2';
 function App() {
   return (
     <div className="App">
@@ -43,6 +47,10 @@ function App() {
        <Route exact path="/about" component={About}/>
        <Route exact path="/contact" component={Contact}/>
        <Route exact path="/formdataState" component={FormDataState}/>
+       <Route exact path="/hookexample" component={HooksExample}/>
+       <Route exact path="/formdatahooks" component={FormDataHooks}/>
+       <Route exact path="/hoccounter1" component={HocCounter1}/>
+       <Route exact path="/hoccounter2" component={HocCounter2}/>
     </Router>
      </div>
   );
